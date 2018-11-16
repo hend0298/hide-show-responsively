@@ -22,13 +22,16 @@ img {
 
 @media only screen and (min-width: 25em) {
 
-  img {
-    width: 100%;
-    display: block;
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
   }
 
-  img:last-child, img:nth-child(2) {
-    display: none;
+  img {
+    width: 50%;
+    padding: .1em;
   }
 
 }
@@ -57,10 +60,20 @@ img {
 
 @media only screen and (min-width: 60em) {
 
-  img:first-child, img:nth-child(2), img:nth-child(3), img:nth-child(4) {
-    width: 25%;
+  img:first-child {
     display: flex;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
+  }
+
+  img {
+    width: 25%;
+    padding: .1em;
   }
 
 }
