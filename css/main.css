@@ -5,6 +5,10 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   box-sizing: border-box;
 }
 
@@ -12,9 +16,13 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+}
+
 @media only screen and (min-width: 25em) {
 
-  img:first-child, img:nth-child(3) {
+  img {
     width: 100%;
     display: block;
   }
@@ -32,10 +40,27 @@ html {
     flex-wrap: wrap;
   }
 
-  img:nth-child(1), img:nth-child(2), img:nth-child(3), img:nth-child(4) {
-  display: inline-block;
-  width: 50%;
+  img:last-child, img:nth-child(2) {
+    display: inline-block;
+  }
+
+  img:first-child {
+    display: none;
+  }
+
+  img {
+    display: inline-block;
+    width: 33.3333%;
+  }
+
 }
 
+@media only screen and (min-width: 60em) {
+
+  img:first-child, img:nth-child(2), img:nth-child(3), img:nth-child(4) {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 }
