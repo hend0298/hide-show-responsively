@@ -30,26 +30,18 @@ img:last-child, img:nth-child(2) {
     display: inline-block;
   }
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
+  img {
+    display: inline-block;
+    width: 49%;
   }
 
-  img {
-    width: 50%;
-    padding: .1em;
+  img:first-child, img:nth-child(2) {
+    display: inline;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
-
-  body {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   img:last-child, img:nth-child(2) {
     display: inline-block;
@@ -61,7 +53,7 @@ img:last-child, img:nth-child(2) {
 
   img {
     display: inline-block;
-    width: 33.3333%;
+    width: 32%;
   }
 
 }
@@ -69,19 +61,17 @@ img:last-child, img:nth-child(2) {
 @media only screen and (min-width: 60em) {
 
   img:first-child {
-    display: flex;
+    display: inline-block;
   }
 
   body {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
+    display: inline-block;
+    text-align: center;
   }
 
   img {
-    width: 25%;
-    padding: .1em;
+    width: 24%;
+    align-items: center;
   }
 
 }
